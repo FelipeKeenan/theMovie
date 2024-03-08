@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilizações globais */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+/*Padronização de estilos dos componentes */
+.hover-btn {
+  @apply hover:bg-black hover:text-yellow-400 duration-300;
+}
+
+.movie-page {
+  @apply flex flex-col items-center justify-center gap-4 mt-8 mb-8 min-768:px-32
+}
+
+.info {
+  @apply flex flex-col items-center
+}
+
+.info-description {
+  @apply px-4 flex flex-col items-center text-center
+}
